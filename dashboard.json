@@ -1,18 +1,17 @@
 {
-  "dashboard": {
-    "name": "Test Dashboard",
-    "description": "Created via API test",
-    "charts": [
-      {
-        "chartOptions": {
-          "type": "timeSeriesChart"
-        },
-        "programText": "A = data('cpu.utilization').mean().publish('A')",
-        "column": 0,
-        "row": 0,
-        "width": 6,
-        "height": 3
-      }
-    ]
-  }
+  "name": "Test Dashboard",
+  "groupId": "test-group",
+  "description": "API test dashboard",
+  "charts": [
+    {
+      "chartOptions": {
+        "type": "timeSeriesChart"
+      },
+      "programText": "A = data('cpu.utilization').mean().publish('A')",
+      "column": 0,
+      "row": 0,
+      "width": 6,
+      "height": 3
+    }
+  ]
 }
