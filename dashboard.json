@@ -1,10 +1,18 @@
 {
- "name": "TEST-GITHUB-DASHBOARD1",
- "description": "Deployed via GitHub Actions",
- "charts": [
-   {
-     "name": "CPU Usage",
-     "programText": "data('^aws.ec2.cpu.utilization').publish(label='A')"
-   }
- ]
+  "dashboard": {
+    "name": "Test Dashboard",
+    "description": "Created via API test",
+    "charts": [
+      {
+        "chartOptions": {
+          "type": "timeSeriesChart"
+        },
+        "programText": "A = data('cpu.utilization').mean().publish('A')",
+        "column": 0,
+        "row": 0,
+        "width": 6,
+        "height": 3
+      }
+    ]
+  }
 }
