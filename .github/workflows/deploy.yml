@@ -18,7 +18,7 @@ jobs:
 
       - name: Deploy Dashboard to Splunk
         run: |
-          curl -X POST https://api.signalfx.com/v2/dashboard \
+          curl -X POST https://api.us1.signalfx.com/v2/dashboard \
           -H "Content-Type: application/json" \
           -H "X-SF-TOKEN: ${{ secrets.SPLUNK_TOKEN }}" \
           -d @dashboard.json
