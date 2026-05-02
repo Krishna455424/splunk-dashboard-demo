@@ -1,17 +1,66 @@
 {
-  "name": "Test Dashboard",
-  "groupId": "test-group",
-  "description": "API test dashboard",
-  "charts": [
+  "chartExports": [
     {
-      "chartOptions": {
-        "type": "timeSeriesChart"
-      },
-      "programText": "A = data('cpu.utilization').mean().publish('A')",
-      "column": 0,
-      "row": 0,
-      "width": 6,
-      "height": 3
+      "chart": {
+        "autoDetectRelatedDetectorIds": [],
+        "created": 0,
+        "creator": null,
+        "customProperties": {},
+        "description": "",
+        "id": "HHVZ1rGA0AE",
+        "importOf": "Dp1KjwpAcAA",
+        "lastUpdated": 0,
+        "lastUpdatedBy": null,
+        "name": "Real time visibility",
+        "options": {
+          "markdown": "Splunk Observability Cloud gives you the most up-to-date view of your systems, applications and business metrics possible - updating as frequently as once per second. (Sometimes, looking at one minute data just isn’t good enough!)\n\nTo the right, you can see some sample data, which reports the number of transactions per second that a demo app is processing. The data started streaming when your company first signed on to Splunk Observability Cloud, so you won't see any data before then. It's a live stream that updates every 5 seconds, and you can go even more fine-grained by choosing a different chart resolution.",
+          "type": "Text"
+        },
+        "packageSpecifications": "",
+        "programText": "",
+        "relatedDetectorIds": [],
+        "tags": []
+      }
     }
-  ]
+  ],
+  "dashboardExport": {
+    "dashboard": {
+      "authorizedWriters": null,
+      "chartDensity": "DEFAULT",
+      "charts": [
+        {
+          "chartId": "HHVZ1rGA0AE",
+          "column": 0,
+          "height": 1,
+          "row": 0,
+          "width": 6
+        }
+      ],
+      "created": 0,
+      "creator": null,
+      "customProperties": null,
+      "description": "Default dashboard.",
+      "discoveryOptions": null,
+      "eventOverlays": null,
+      "filters": {
+        "sources": [],
+        "time": null,
+        "variables": []
+      },
+      "groupId": "HHU_JZWA0AI",
+      "groupName": "ranjana1710r@gmail.com",
+      "id": "HHU_JZWA0AM",
+      "lastUpdated": 0,
+      "lastUpdatedBy": null,
+      "maxDelayOverride": null,
+      "name": "ranjana1710r@gmail.com",
+      "permissions": null,
+      "selectedEventOverlays": null,
+      "tags": []
+    }
+  },
+  "hashCode": -1142036610,
+  "id": "HHU_JZWA0AM",
+  "modelVersion": 1,
+  "packageType": "DASHBOARD"
 }
