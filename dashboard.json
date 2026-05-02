@@ -3,21 +3,92 @@
     {
       "chart": {
         "autoDetectRelatedDetectorIds": [],
+        "chartLinks": [],
         "created": 0,
         "creator": null,
         "customProperties": {},
         "description": "",
-        "id": "HHVZ1rGA0AE",
-        "importOf": "Dp1KjwpAcAA",
+        "id": "HHVgCqLA0AA",
         "lastUpdated": 0,
         "lastUpdatedBy": null,
-        "name": "Real time visibility",
+        "name": "test",
         "options": {
-          "markdown": "Splunk Observability Cloud gives you the most up-to-date view of your systems, applications and business metrics possible - updating as frequently as once per second. (Sometimes, looking at one minute data just isn’t good enough!)\n\nTo the right, you can see some sample data, which reports the number of transactions per second that a demo app is processing. The data started streaming when your company first signed on to Splunk Observability Cloud, so you won't see any data before then. It's a live stream that updates every 5 seconds, and you can go even more fine-grained by choosing a different chart resolution.",
-          "type": "Text"
+          "areaChartOptions": {
+            "showDataMarkers": false
+          },
+          "axes": [
+            {
+              "highWatermark": null,
+              "highWatermarkLabel": null,
+              "label": "",
+              "lowWatermark": null,
+              "lowWatermarkLabel": null,
+              "max": null,
+              "min": null
+            },
+            {
+              "highWatermark": null,
+              "highWatermarkLabel": null,
+              "label": "",
+              "lowWatermark": null,
+              "lowWatermarkLabel": null,
+              "max": null,
+              "min": null
+            }
+          ],
+          "axisPrecision": null,
+          "colorBy": "Dimension",
+          "defaultPlotType": "LineChart",
+          "eventPublishLabelOptions": [],
+          "histogramChartOptions": {
+            "colorThemeIndex": 16
+          },
+          "includeZero": false,
+          "legendOptions": {
+            "fields": null
+          },
+          "lineChartOptions": {
+            "showDataMarkers": false
+          },
+          "noDataOptions": {
+            "linkText": null,
+            "linkUrl": null,
+            "noDataMessage": null
+          },
+          "onChartLegendOptions": {
+            "dimensionInLegend": null,
+            "showLegend": false
+          },
+          "programOptions": {
+            "disableSampling": false,
+            "maxDelay": 0,
+            "minimumResolution": 0,
+            "timezone": null
+          },
+          "publishLabelOptions": [
+            {
+              "displayName": "^aws.ec2.cpu.utilization",
+              "label": "A",
+              "paletteIndex": null,
+              "plotType": null,
+              "valuePrefix": null,
+              "valueSuffix": null,
+              "valueUnit": null,
+              "yAxis": 0
+            }
+          ],
+          "showEventLines": false,
+          "stacked": false,
+          "time": {
+            "range": 900000,
+            "rangeEnd": 0,
+            "type": "relative"
+          },
+          "type": "TimeSeriesChart",
+          "unitPrefix": "Metric"
         },
         "packageSpecifications": "",
-        "programText": "",
+        "programText": "A = data('^aws.ec2.cpu.utilization').publish(label='A')",
         "relatedDetectorIds": [],
         "tags": []
       }
@@ -29,7 +100,7 @@
       "chartDensity": "DEFAULT",
       "charts": [
         {
-          "chartId": "HHVZ1rGA0AE",
+          "chartId": "HHVgCqLA0AA",
           "column": 0,
           "height": 1,
           "row": 0,
@@ -59,7 +130,7 @@
       "tags": []
     }
   },
-  "hashCode": -1142036610,
+  "hashCode": 1790639405,
   "id": "HHU_JZWA0AM",
   "modelVersion": 1,
   "packageType": "DASHBOARD"
