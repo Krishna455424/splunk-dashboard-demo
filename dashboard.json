@@ -1,140 +1,22 @@
 {
-  "chartExports": [
+  "name": "krishna",
+  "groupId": "HHdO3BuAwAA",
+  "charts": [
     {
-      "chart": {
-        "autoDetectRelatedDetectorIds": [],
-        "chartLinks": [],
-        "created": 0,
-        "creator": null,
-        "customProperties": {},
-        "description": "",
-        "id": "HHdPQZmA4AA",
-        "lastUpdated": 0,
-        "lastUpdatedBy": null,
-        "name": "cpu",
-        "options": {
-          "areaChartOptions": {
-            "showDataMarkers": false
-          },
-          "axes": [
-            {
-              "highWatermark": null,
-              "highWatermarkLabel": null,
-              "label": "",
-              "lowWatermark": null,
-              "lowWatermarkLabel": null,
-              "max": null,
-              "min": null
-            },
-            {
-              "highWatermark": null,
-              "highWatermarkLabel": null,
-              "label": "",
-              "lowWatermark": null,
-              "lowWatermarkLabel": null,
-              "max": null,
-              "min": null
-            }
-          ],
-          "axisPrecision": null,
-          "colorBy": "Dimension",
-          "defaultPlotType": "LineChart",
-          "eventPublishLabelOptions": [],
-          "histogramChartOptions": {
-            "colorThemeIndex": 16
-          },
-          "includeZero": false,
-          "legendOptions": {
-            "fields": null
-          },
-          "lineChartOptions": {
-            "showDataMarkers": false
-          },
-          "noDataOptions": {
-            "linkText": null,
-            "linkUrl": null,
-            "noDataMessage": null
-          },
-          "onChartLegendOptions": {
-            "dimensionInLegend": null,
-            "showLegend": false
-          },
-          "programOptions": {
-            "disableSampling": false,
-            "maxDelay": 0,
-            "minimumResolution": 0,
-            "timezone": null
-          },
-          "publishLabelOptions": [
-            {
-              "displayName": "cpu.utilization",
-              "label": "A",
-              "paletteIndex": null,
-              "plotType": null,
-              "valuePrefix": null,
-              "valueSuffix": null,
-              "valueUnit": null,
-              "yAxis": 0
-            }
-          ],
-          "showEventLines": false,
-          "stacked": false,
-          "time": {
-            "range": 900000,
-            "rangeEnd": 0,
-            "type": "relative"
-          },
-          "type": "TimeSeriesChart",
-          "unitPrefix": "Metric"
-        },
-        "packageSpecifications": "",
-        "programText": "A = data('cpu.utilization').publish(label='A')",
-        "relatedDetectorIds": [],
-        "tags": []
-      }
+      "chartId": "HHdPQZmA4AA",
+      "column": 0,
+      "height": 1,
+      "row": 0,
+      "width": 6
     }
   ],
-  "dashboardExport": {
-    "dashboard": {
-      "authorizedWriters": null,
-      "chartDensity": "DEFAULT",
-      "charts": [
-        {
-          "chartId": "HHdPQZmA4AA",
-          "column": 0,
-          "height": 1,
-          "row": 0,
-          "width": 6
-        }
-      ],
-      "created": 0,
-      "creator": null,
-      "customProperties": null,
-      "description": "",
-      "discoveryOptions": null,
-      "eventOverlays": null,
-      "filters": {
-        "sources": [],
-        "time": {
-          "end": "Now",
-          "start": "-1m"
-        },
-        "variables": []
-      },
-      "groupId": "HHdO3BuAwAA",
-      "groupName": "krishna",
-      "id": "HHdT7dyA0AA",
-      "lastUpdated": 0,
-      "lastUpdatedBy": null,
-      "maxDelayOverride": null,
-      "name": "krishna",
-      "permissions": null,
-      "selectedEventOverlays": [],
-      "tags": []
-    }
-  },
-  "hashCode": 469112280,
-  "id": "HHdT7dyA0AA",
-  "modelVersion": 1,
-  "packageType": "DASHBOARD"
+  "description": "",
+  "filters": {
+    "sources": [],
+    "time": {
+      "end": "Now",
+      "start": "-1m"
+    },
+    "variables": []
+  }
 }
