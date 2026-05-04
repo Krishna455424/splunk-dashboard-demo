@@ -13,12 +13,37 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Install curl
-        run: sudo apt-get install -y curl
+      # OPTIONAL but recommended for debugging JSON
+      - name: Validate JSON
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+          jq . dashboard.json
 
+      # STEP 1: Create Chart (IMPORTANT)
+      - name: Create Chart in Splunk
+        id: create_chart
+        run: |
+          RESPONSE=$(curl -s -X POST https://api.us1.signalfx.com/v2/chart \
+            -H "Content-Type: application/json" \
+            -H "X-SF-TOKEN: ${{ secrets.SPLUNK_TOKEN }}" \
+            -d @cpu-chart.json)
+
+          echo "Response: $RESPONSE"
+
+          CHART_ID=$(echo $RESPONSE | jq -r '.id')
+
+          echo "CHART_ID=$CHART_ID" >> $GITHUB_ENV
+
+      # STEP 2: Inject chartId into dashboard.json
+      - name: Update Dashboard JSON
+        run: |
+          jq --arg id "$CHART_ID" '.charts[0].chartId=$id' dashboard.json > updated-dashboard.json
+
+      # STEP 3: Deploy Dashboard
       - name: Deploy Dashboard to Splunk
         run: |
           curl -X POST https://api.us1.signalfx.com/v2/dashboard \
-          -H "Content-Type: application/json" \
-          -H "X-SF-TOKEN: ${{ secrets.SPLUNK_TOKEN }}" \
-          -d @dashboard.json
+            -H "Content-Type: application/json" \
+            -H "X-SF-TOKEN: ${{ secrets.SPLUNK_TOKEN }}" \
+            -d @updated-dashboard.json
