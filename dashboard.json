@@ -8,10 +8,10 @@
         "creator": null,
         "customProperties": {},
         "description": "",
-        "id": "HHVgCqLA0AA",
+        "id": "HHdPQZmA4AA",
         "lastUpdated": 0,
         "lastUpdatedBy": null,
-        "name": "test",
+        "name": "cpu",
         "options": {
           "areaChartOptions": {
             "showDataMarkers": false
@@ -67,7 +67,7 @@
           },
           "publishLabelOptions": [
             {
-              "displayName": "^aws.ec2.cpu.utilization",
+              "displayName": "cpu.utilization",
               "label": "A",
               "paletteIndex": null,
               "plotType": null,
@@ -88,7 +88,7 @@
           "unitPrefix": "Metric"
         },
         "packageSpecifications": "",
-        "programText": "A = data('^aws.ec2.cpu.utilization').publish(label='A')",
+        "programText": "A = data('cpu.utilization').publish(label='A')",
         "relatedDetectorIds": [],
         "tags": []
       }
@@ -100,7 +100,7 @@
       "chartDensity": "DEFAULT",
       "charts": [
         {
-          "chartId": "HHVgCqLA0AA",
+          "chartId": "HHdPQZmA4AA",
           "column": 0,
           "height": 1,
           "row": 0,
@@ -110,28 +110,31 @@
       "created": 0,
       "creator": null,
       "customProperties": null,
-      "description": "Default dashboard.",
+      "description": "",
       "discoveryOptions": null,
       "eventOverlays": null,
       "filters": {
         "sources": [],
-        "time": null,
+        "time": {
+          "end": "Now",
+          "start": "-1m"
+        },
         "variables": []
       },
-      "groupId": "HHU_JZWA0AI",
-      "groupName": "ranjana1710r@gmail.com",
-      "id": "HHU_JZWA0AM",
+      "groupId": "HHdO3BuAwAA",
+      "groupName": "krishna",
+      "id": "HHdT7dyA0AA",
       "lastUpdated": 0,
       "lastUpdatedBy": null,
       "maxDelayOverride": null,
-      "name": "ranjana1710r@gmail.com",
+      "name": "krishna",
       "permissions": null,
-      "selectedEventOverlays": null,
+      "selectedEventOverlays": [],
       "tags": []
     }
   },
-  "hashCode": 1790639405,
-  "id": "HHU_JZWA0AM",
+  "hashCode": 469112280,
+  "id": "HHdT7dyA0AA",
   "modelVersion": 1,
   "packageType": "DASHBOARD"
 }
