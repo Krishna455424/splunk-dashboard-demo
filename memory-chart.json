@@ -1,0 +1,7 @@
+{
+  "name": "Memory Utilization",
+  "programText": "A = data('memory.utilization').publish(label='A')",
+  "options": {
+    "type": "TimeSeriesChart"
+  }
+}
