@@ -3,20 +3,11 @@
   "groupId": "HHdO3BuAwAA",
   "charts": [
     {
-      "chartId": "",
+      "chartId": "HHdYCQWAwAE",
       "column": 0,
       "height": 1,
       "row": 0,
       "width": 6
     }
-  ],
-  "description": "",
-  "filters": {
-    "sources": [],
-    "time": {
-      "end": "Now",
-      "start": "-1m"
-    },
-    "variables": []
-  }
+  ]
 }

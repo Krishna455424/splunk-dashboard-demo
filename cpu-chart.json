@@ -1,0 +1,7 @@
+{
+  "name": "CPU Utilization",
+  "programText": "A = data('cpu.utilization').publish(label='A')",
+  "options": {
+    "type": "TimeSeriesChart"
+  }
+}
